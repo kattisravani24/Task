@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Task</title>
+    <!-- Fav-Icon -->
+    <link rel="icon" href="images/fav.png" type="image/gif" sizes="16x16">
+    <!-- Font-Awesome-Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <div class="row signup-row logout" style="text-align: center;padding: 40px 20px;">
+            <h4>Store and retrieve data from local storage.</h4>
+            <p id="demo"></p>
+            <h2 style="margin-bottom: 80px;">Login Successful</h2>
+            <a href="login.html"><i class="fa fa-power-off"></i></a>
+            <h5 style="color: #E67E22;">Logout</h5>
+          </div>
+        </div>
+      </div>
+    </div>    
+    </div>
+
+    <script>
+      var myObj, myJSON, text, obj;
+      //Storing data:
+      myObj = { "name":"John", "age":31, "city":"New York" };
+      myJSON = JSON.stringify(myObj);
+      localStorage.setItem("testJSON", myJSON);
+
+      //Retrieving data:
+      text = localStorage.getItem("testJSON");
+      obj = JSON.parse(text);
+      document.getElementById("demo").innerHTML = obj.name;
+    </script>
+  </body>
+</html>

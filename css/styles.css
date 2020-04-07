@@ -1,0 +1,190 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a, .row
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background-color: #eee;
+}
+.signup-row h2
+{
+	color: #E67E22;
+}
+.native-signup h2, .social-signup h2
+{
+	margin-bottom: 20px;
+}
+.form-group
+{
+		position: relative;
+}
+.feild-icon
+{
+	position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #ccc;
+}
+label
+{
+font-size: 14px;
+position: absolute;
+top: 5px;
+left: 10px;
+color: #ccc;
+transition: all 0.2s ease;
+}
+input:not([value=""]) ~ label
+{
+  color: #E67E22;
+  font-size: 12px;
+  top: -10px;
+}
+input:focus ~ i
+{
+	color: #E67E22;
+}
+.native-signup
+{
+	padding: 60px 40px 0px 40px;
+}
+.f-c
+{
+	padding: 0 35px 0 10px;
+	margin-bottom: 15px;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	box-shadow: none;
+	border-radius: 0;
+}
+.f-c:focus 
+{
+    border-bottom-color: #CCCCCC;
+    box-shadow: none;
+}
+.signup-btn
+{
+	background-color: #E67E22;
+	color: #fff;
+	padding: 8px 40px;
+	transition: all 0.2s ease;
+}
+.signup-btn:hover, .signup-btn:visited
+{
+	color: #E67E22;
+	border: 1px solid #E67E22;
+	border-radius: 4px;
+	background-color: #fff;
+}
+.signup-row
+{
+	box-shadow: 0px 0px 3px 0px #888888;
+	background-color: #fff;
+	margin-top: 90px;
+	border-radius: 4px;
+}
+.social-signup
+{
+	background-image: url("../images/1.jpg");
+	background-size: cover;
+	height: 100%;
+	border-radius: 0 4px 4px 0;
+	padding: 60px 40px;
+	color: #fff;
+}
+.social-btn
+{
+	border: none;
+    width: 100%;
+    border-radius: 0;
+    margin: 10px 0;
+}
+.gpbtn
+{
+	background-color: #DE4B3B;
+}
+.fbtn
+{
+	background-color: #32508E;
+}
+.ebtn 
+{
+	background-color: #848484;
+}
+.social-signup a
+{
+	color: #fff;
+}
+.gpbtn:hover, .fbtn:hover, .ebtn:hover
+{
+	background-color: #fff;
+}
+.gpbtn:hover
+{
+	color: #DE4B3B;
+}
+.fbtn:hover
+{
+	color: #32508E;
+}
+.ebtn:hover
+{
+	color: #848484;
+}
+.btn:focus 
+{
+  outline: none;
+}
+.or
+{
+	position: absolute;
+  background-color: grey;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  bottom: 325px;
+  left: 660px;
+}
+.logout i
+{
+	font-size: 20px;
+  color: #E67E22;
+  border: solid 2px #E67E22;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 9px 10px;
+}
+.logout i:hover
+{
+	color: #fff;
+	background-color: #E67E22;
+}
+
+@media (min-width: 320px) and (max-width: 571px)
+{
+	.native-signup 
+	{
+	    padding: 20px 20px 70px 20px;
+	}
+	.signup-row 
+	{
+	    margin-top: 20px;
+	}
+	.social-signup 
+	{
+		padding: 20px;
+	}
+}
+@media (min-width: 767px) and (max-width:  768px;)
+{
+	.native-signup
+	{
+		padding: 40px 20px 0px 20px;
+	}
+	.social-signup
+	{
+		padding: 40px 20px 7px 20px;
+	}
+}
